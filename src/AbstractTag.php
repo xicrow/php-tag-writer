@@ -466,7 +466,7 @@ abstract class AbstractTag implements RenderableInterface
 			$value = json_encode($value);
 		}
 
-		$value = trim($value);
+		$value = trim((string)$value);
 		$value = str_replace('"', '\'', $value);
 
 		return $attribute . '="' . $value . '"';
