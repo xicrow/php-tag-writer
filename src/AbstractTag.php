@@ -447,8 +447,8 @@ abstract class AbstractTag implements RenderableInterface
 	 */
 	protected function renderAttribute($attribute, $value): string
 	{
-		if (is_int($attribute)) {
-			return trim($value);
+		if (is_int($attribute) && is_scalar($value)) {
+			return trim((string)$value);
 		}
 
 		$attribute = trim($attribute);
