@@ -1,41 +1,33 @@
 {
-	"name"        : "xicrow/php-tag-writer",
-	"description" : "HTML generator for PHP",
-	"type"        : "library",
-	"keywords"    : [
+	"name"       : "xicrow/php-tag-writer",
+	"description": "HTML generator for PHP",
+	"type"       : "library",
+	"keywords"   : [
 		"html",
 		"generator",
 		"builder",
 		"tools",
 		"php"
 	],
-	"license"     : "MIT",
-	"authors"     : [
+	"license"    : "MIT",
+	"authors"    : [
 		{
 			"name"    : "Jan Ebsen",
 			"email"   : "xicrow@gmail.com",
-			"homepage": "http://jan-ebsen.dk",
+			"homepage": "https://jan-ebsen.dk",
 			"role"    : "developer"
 		}
 	],
-	"support"     : {
+	"support"    : {
 		"issues": "https://github.com/xicrow/php-tag-writer/issues"
 	},
-	"require"     : {
+	"require"    : {
 		"php"     : "^7.1",
 		"ext-json": "*"
 	},
-	"require-dev" : {
-		"phpunit/phpunit": "^5.2"
-	},
-	"autoload"    : {
+	"autoload"   : {
 		"psr-4": {
 			"Xicrow\\PhpTagWriter\\": "src"
-		}
-	},
-	"autoload-dev": {
-		"psr-4": {
-			"Xicrow\\PhpTagWriter\\Test\\": "tests"
 		}
 	}
 }

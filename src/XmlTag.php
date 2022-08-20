@@ -48,7 +48,7 @@ class XmlTag extends AbstractTag
 			$string .= '<';
 			$string .= $this->name;
 			$string .= $this->renderAttributes();
-			if(substr($this->name, 0, 1) === '?') {
+			if (substr($this->name, 0, 1) === '?') {
 				$string .= '?>';
 			} else {
 				$string .= '>';
